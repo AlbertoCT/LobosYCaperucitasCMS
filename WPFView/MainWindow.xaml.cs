@@ -17,7 +17,7 @@ namespace WPFView
         LobosYCaperucitasContext context;
         bool isBeingEditedArticulos, isBeingEditedCategorias;
         bool isInsertModeArticulos, isInsertModeCategorias;
-
+         
         public MainWindow()
         {
             InitializeComponent();
