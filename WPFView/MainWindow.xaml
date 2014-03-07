@@ -15,6 +15,7 @@
                           ItemsSource="{Binding}"
                           PreviewKeyDown="DG1_PreviewKeyDown"
                           RowEditEnding="DG1_RowEditEnding">
+
                     <DataGrid.Columns>
                         <DataGridTextColumn Binding="{Binding Nombre, NotifyOnTargetUpdated=True, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Header="Nombre" />
                         <DataGridTextColumn Binding="{Binding Referencia,
