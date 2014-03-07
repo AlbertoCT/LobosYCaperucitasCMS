@@ -23,11 +23,14 @@
                                                               UpdateSourceTrigger=PropertyChanged}"
                                             Header="Referencia"
                                             IsReadOnly="True" />
-                        
+
                         <DataGridComboBoxColumn x:Name="ComboBoxColumn"
                                                 DisplayMemberPath="Nombre"
                                                 Header="Categoría"
-                                                SelectedItemBinding="{Binding Categoria}" />
+                                                SelectedItemBinding="{Binding Categoria,
+                                                                              Mode=TwoWay,
+                                                                              NotifyOnTargetUpdated=True,
+                                                                              UpdateSourceTrigger=PropertyChanged}" />
 
                         <DataGridCheckBoxColumn Binding="{Binding EnStock, NotifyOnTargetUpdated=True, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Header="En Stock" />
                         <DataGridTextColumn Binding="{Binding DiasProduccion, NotifyOnTargetUpdated=True, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Header="Días Producción" />
